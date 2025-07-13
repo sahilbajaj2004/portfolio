@@ -472,57 +472,57 @@ export default function Portfolio() {
             </p>
           </div>
 
-          <div className="grid grid-cols-2 gap-4">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             {[
               {
-                content:
-                  "Excited to announce that I’ve joined a new team as a Full Stack Developer! Looking forward to building impactful products and growing with amazing people. #NewBeginnings #FullStack",
-                time: "1d",
+          content:
+            "Excited to announce that I’ve joined a new team as a Full Stack Developer! Looking forward to building impactful products and growing with amazing people. #NewBeginnings #FullStack",
+          time: "1d",
               },
               {
-                content:
-                  "Just published a new article on best practices for scalable React applications. Check it out on my LinkedIn profile! #ReactJS #WebDevelopment",
-                time: "3d",
+          content:
+            "Just published a new article on best practices for scalable React applications. Check it out on my LinkedIn profile! #ReactJS #WebDevelopment",
+          time: "3d",
               },
               {
-                content:
-                  "Honored to be recognized as a top contributor in my organization. Grateful for the support and collaboration from my peers. #Teamwork #Recognition",
-                time: "5d",
+          content:
+            "Honored to be recognized as a top contributor in my organization. Grateful for the support and collaboration from my peers. #Teamwork #Recognition",
+          time: "5d",
               },
               {
-                content:
-                  "Attended a fantastic webinar on blockchain integration in modern web apps. Excited to apply these insights to upcoming projects! #Blockchain #Learning",
-                time: "1w",
+          content:
+            "Attended a fantastic webinar on blockchain integration in modern web apps. Excited to apply these insights to upcoming projects! #Blockchain #Learning",
+          time: "1w",
               },
             ].map((post, index) => (
               <div
-                key={index}
-                className="p-4 space-y-3 bg-white dark:bg-[#18181b] border rounded-xl shadow-sm h-full"
-                style={{
-                  borderWidth: 1,
-                  borderStyle: "solid",
-                  borderColor: "rgba(120,120,120,0.08)",
-                  backgroundColor: "var(--tw-bg-opacity,0.5)",
-                  minHeight: 180,
-                }}
+          key={index}
+          className="p-4 space-y-3 bg-white dark:bg-[#18181b] border rounded-xl shadow-sm h-full"
+          style={{
+            borderWidth: 1,
+            borderStyle: "solid",
+            borderColor: "rgba(120,120,120,0.08)",
+            backgroundColor: "var(--tw-bg-opacity,0.5)",
+            minHeight: 180,
+          }}
               >
-                <div className="flex items-start gap-3">
-                  <div className="w-8 h-8 bg-blue-100 dark:bg-blue-900 rounded-full flex items-center justify-center">
-                    <FaLinkedin className="text-blue-700 dark:text-blue-400 w-5 h-5" />
-                  </div>
-                  <div>
-                    <p className="font-semibold text-base">Sahil Bajaj</p>
-                    <p className="text-gray-700 dark:text-gray-300 text-sm">
-                      LinkedIn /sahilbajaj2004
-                    </p>
-                  </div>
-                </div>
-                <p className="text-gray-700 dark:text-gray-300 text-sm leading-relaxed">
-                  {post.content}
-                </p>
-                <p className="text-gray-700 dark:text-gray-300 text-sm">
-                  {post.time}
-                </p>
+          <div className="flex items-start gap-3">
+            <div className="w-8 h-8 bg-blue-100 dark:bg-blue-900 rounded-full flex items-center justify-center">
+              <FaLinkedin className="text-blue-700 dark:text-blue-400 w-5 h-5" />
+            </div>
+            <div>
+              <p className="font-semibold text-base">Sahil Bajaj</p>
+              <p className="text-gray-700 dark:text-gray-300 text-sm">
+                LinkedIn /sahilbajaj2004
+              </p>
+            </div>
+          </div>
+          <p className="text-gray-700 dark:text-gray-300 text-sm leading-relaxed">
+            {post.content}
+          </p>
+          <p className="text-gray-700 dark:text-gray-300 text-sm">
+            {post.time}
+          </p>
               </div>
             ))}
           </div>
@@ -541,16 +541,16 @@ export default function Portfolio() {
             <br />
             soliciting.
           </p>
-          <div className="flex justify-center mt-6">
-            <a
+            <div className="flex justify-center mt-6">
+              <a
               href="/SahilBajajResume.pdf"
               download
-              className="inline-flex items-center gap-2 px-4 py-2 rounded-4xl bg-black text-white dark:bg-white dark:text-black font-semibold shadow hover:bg-gray-800 dark:hover:bg-gray-200 transition-colors"
-            >
-              <span>Resume</span>
+              className="inline-flex items-center gap-2 px-4 py-2 rounded-4xl bg-blue-900 text-white dark:bg-blue-800 dark:text-white font-semibold shadow hover:bg-blue-950 dark:hover:bg-blue-700 transition-colors"
+              >
+              <span>Download Resume</span>
               <FaDownload className="w-5 h-5" />
-            </a>
-          </div>
+              </a>
+            </div>
         </section>
       </div>
 
