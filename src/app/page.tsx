@@ -20,7 +20,9 @@ export default function Portfolio() {
 
   return (
     <div className="min-h-screen bg-background text-foreground transition-colors duration-300">
-      <Crosshair color={isDark ? "white" : "black"} />
+      <div className="hidden sm:block">
+        <Crosshair color={isDark ? "white" : "black"} />
+      </div>
       {/* Main Content */}
       <div className="max-w-5xl mx-auto px-6 py-12 pb-32">
         {/* Header Section */}
