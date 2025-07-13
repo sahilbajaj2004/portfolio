@@ -475,54 +475,88 @@ export default function Portfolio() {
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             {[
               {
-          content:
-            "Excited to announce that I’ve joined a new team as a Full Stack Developer! Looking forward to building impactful products and growing with amazing people. #NewBeginnings #FullStack",
-          time: "1d",
+              content:
+                "FingerSense – Real-Time Gesture Censorship with AI\nOverview\nFingerSense is a real-time hand gesture recognition tool that detects when the middle finger is shown and automatically applies a Gaussian blur on it using your webcam feed.\n\nKey Features\n\nDetects middle finger gestures using MediaPipe Hand Tracking\n\nApplies live Gaussian blur with OpenCV\n\nUses a gesture history voting system to avoid false positives\n\nPrevents crashes when hands leave the frame",
+              time: "1d",
+              video: "/fingersense-demo.mp4", // Add your video file path here
               },
               {
-          content:
-            "Just published a new article on best practices for scalable React applications. Check it out on my LinkedIn profile! #ReactJS #WebDevelopment",
-          time: "3d",
+              content:
+                "Just published a new article on best practices for scalable React applications. Check it out on my LinkedIn profile! #ReactJS #WebDevelopment",
+              time: "3d",
               },
               {
-          content:
-            "Honored to be recognized as a top contributor in my organization. Grateful for the support and collaboration from my peers. #Teamwork #Recognition",
-          time: "5d",
+              content:
+                "Honored to be recognized as a top contributor in my organization. Grateful for the support and collaboration from my peers. #Teamwork #Recognition",
+              time: "5d",
               },
               {
-          content:
-            "Attended a fantastic webinar on blockchain integration in modern web apps. Excited to apply these insights to upcoming projects! #Blockchain #Learning",
-          time: "1w",
+              content:
+                "Attended a fantastic webinar on blockchain integration in modern web apps. Excited to apply these insights to upcoming projects! #Blockchain #Learning",
+              time: "1w",
               },
             ].map((post, index) => (
               <div
-          key={index}
-          className="p-4 space-y-3 bg-white dark:bg-[#18181b] border rounded-xl shadow-sm h-full"
-          style={{
-            borderWidth: 1,
-            borderStyle: "solid",
-            borderColor: "rgba(120,120,120,0.08)",
-            backgroundColor: "var(--tw-bg-opacity,0.5)",
-            minHeight: 180,
-          }}
+              key={index}
+              className="p-4 space-y-3 bg-white dark:bg-[#18181b] border rounded-xl shadow-sm h-full"
+              style={{
+                borderWidth: 1,
+                borderStyle: "solid",
+                borderColor: "rgba(120,120,120,0.08)",
+                backgroundColor: "var(--tw-bg-opacity,0.5)",
+                minHeight: 180,
+              }}
               >
-          <div className="flex items-start gap-3">
-            <div className="w-8 h-8 bg-blue-100 dark:bg-blue-900 rounded-full flex items-center justify-center">
-              <FaLinkedin className="text-blue-700 dark:text-blue-400 w-5 h-5" />
-            </div>
-            <div>
-              <p className="font-semibold text-base">Sahil Bajaj</p>
-              <p className="text-gray-700 dark:text-gray-300 text-sm">
-                LinkedIn /sahilbajaj2004
+                <div className="flex items-start gap-3 relative">
+                {/* Profile Image on the left */}
+                <div className="flex flex-col items-center mr-2">
+                  <a
+                  href="https://www.linkedin.com/in/sahilbajaj2004"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >
+                  <div className="w-11 h-11 bg-blue-100 dark:bg-blue-900 rounded-full flex items-center justify-center overflow-hidden">
+                    <Image
+                    src="/bajaj.jpg"
+                    alt="Sahil Bajaj"
+                    width={44}
+                    height={44}
+                    className="object-cover w-11 h-11 rounded-full"
+                    />
+                  </div>
+                  </a>
+                </div>
+                <div>
+                  <p className="font-semibold text-base">Sahil Bajaj</p>
+                  <p className="text-gray-700 dark:text-gray-300 text-sm">
+                  LinkedIn /sahilbajaj2004
+                  </p>
+                </div>
+                {/* React icon in the top-right corner */}
+                <a
+                  href="https://www.linkedin.com/in/sahilbajaj2004"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="absolute top-0 right-0"
+                >
+                  <FaLinkedin className="text-blue-700 dark:text-blue-400 w-5 h-5" />
+                </a>
+                </div>
+              {/* Show video for the first post */}
+              {index === 0 && post.video && (
+                <video
+                src={post.video}
+                controls
+                className="w-full rounded-lg mb-2"
+                style={{ maxHeight: 220 }}
+                />
+              )}
+              <p className="text-gray-700 dark:text-gray-300 text-sm leading-relaxed">
+                {post.content}
               </p>
-            </div>
-          </div>
-          <p className="text-gray-700 dark:text-gray-300 text-sm leading-relaxed">
-            {post.content}
-          </p>
-          <p className="text-gray-700 dark:text-gray-300 text-sm">
-            {post.time}
-          </p>
+              <p className="text-gray-700 dark:text-gray-300 text-sm">
+                {post.time}
+              </p>
               </div>
             ))}
           </div>
@@ -541,16 +575,16 @@ export default function Portfolio() {
             <br />
             soliciting.
           </p>
-            <div className="flex justify-center mt-6">
-              <a
+          <div className="flex justify-center mt-6">
+            <a
               href="/SahilBajajResume.pdf"
               download
               className="inline-flex items-center gap-2 px-4 py-2 rounded-4xl bg-blue-900 text-white dark:bg-blue-800 dark:text-white font-semibold shadow hover:bg-blue-950 dark:hover:bg-blue-700 transition-colors"
-              >
+            >
               <span>Download Resume</span>
               <FaDownload className="w-5 h-5" />
-              </a>
-            </div>
+            </a>
+          </div>
         </section>
       </div>
 
