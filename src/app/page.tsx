@@ -478,7 +478,7 @@ export default function Portfolio() {
               content:
                 "FingerSense – Real-Time Gesture Censorship with AI\nOverview\nFingerSense is a real-time hand gesture recognition tool that detects when the middle finger is shown and automatically applies a Gaussian blur on it using your webcam feed.\n\nKey Features\n\nDetects middle finger gestures using MediaPipe Hand Tracking\n\nApplies live Gaussian blur with OpenCV\n\nUses a gesture history voting system to avoid false positives\n\nPrevents crashes when hands leave the frame",
               time: "1d",
-              video: "/fingersense-demo.mp4", // Add your video file path here
+              video: "/post1.mp4", // Add your video file path here
               },
               {
               content:
