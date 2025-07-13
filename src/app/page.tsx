@@ -4,7 +4,7 @@ import Image from "next/image";
 import Crosshair from "@/components/ui/Crosshair";
 import { Button } from "@/components/ui/button";
 import { ExternalLink, Mail, Home, Sun, Moon } from "lucide-react";
-import { FaGithub, FaLinkedin, FaXTwitter } from "react-icons/fa6";
+import { FaGithub, FaLinkedin, FaXTwitter, FaDownload } from "react-icons/fa6";
 import { useState, useEffect } from "react";
 
 export default function Portfolio() {
@@ -543,25 +543,12 @@ export default function Portfolio() {
           </p>
           <div className="flex justify-center mt-6">
             <a
-              href="/resume.pdf"
+              href="/SahilBajajResume.pdf"
               download
               className="inline-flex items-center gap-2 px-4 py-2 rounded-4xl bg-black text-white dark:bg-white dark:text-black font-semibold shadow hover:bg-gray-800 dark:hover:bg-gray-200 transition-colors"
             >
               <span>Resume</span>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="w-5 h-5"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M4 16v2a2 2 0 002 2h12a2 2 0 002-2v-2M7 10l5 5 5-5M12 15V3"
-                />
-              </svg>
+              <FaDownload className="w-5 h-5" />
             </a>
           </div>
         </section>
