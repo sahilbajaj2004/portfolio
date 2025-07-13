@@ -21,80 +21,69 @@ export default function ProjectsSection() {
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
         {[
           {
-            title: "Timelock Landing",
-            subtitle: "June 2025 - Present",
+            title: "Prerna Institution",
+            subtitle: "Jan 2025",
             description:
-              "A modern landing page for Timelock Protocol showcasing advanced DeFi trading features with unlimited upside and zero liquidation risk. Features quantum-secured positions and temporal arbitrage across multiple DeFi protocols with enhanced yields.",
-            image: "/timelock.png",
+              "Developed a modern and responsive landing page for Prerna Institution with details about the institute, programs, and contact. Built using Next.js and Flask for dynamic content handling.",
+            image: "/Prerna.png",
             tech: [
               "Next.js",
               "TypeScript",
-              "TailwindCSS",
-              "Framer Motion",
-              "DeFi",
-              "Blockchain",
-              "Shadcn UI",
-            ],
-            links: {
-              website: "#",
-              source: "#",
-            },
-          },
-          {
-            title: "Veri Doc",
-            subtitle: "May 2025 - Present",
-            description:
-              "A decentralized document verification system using zero-knowledge proofs to reduce maintenance costs and improve verification efficiency. The system significantly decreases verification time compared to standard methods while maintaining security.",
-            image: "/veridoc.png",
-            tech: [
-              "Next.js",
-              "TypeScript",
-              "Zero-Knowledge Proofs",
-              "Blockchain",
-              "Solidity",
               "TailwindCSS",
               "Shadcn UI",
-            ],
-            links: {
-              website: "#",
-              source: "#",
-            },
-          },
-          {
-            title: "Portfolio V2",
-            subtitle: "April 2025",
-            description:
-              "A sleek, fully responsive portfolio website built with Next.js and TailwindCSS. Features dark mode, animated transitions, and a CMS-powered blog section for easy content management.",
-            image: "/portfolio-v2.png",
-            tech: [
-              "Next.js",
-              "TypeScript",
-              "TailwindCSS",
-              "Framer Motion",
-              "MDX",
               "Vercel",
             ],
             links: {
-              website: "#",
-              source: "#",
+              website: "https://prernainstitution.vercel.app/",
+              source: "https://github.com/sahilbajaj2004/institute",
             },
           },
           {
-            title: "Crypto Tracker",
+            title: "Ime College Website",
+            subtitle: "April 2025",
+            description:
+              "Created a clean, fast-loading website for IME College. It includes responsive design, smooth animations, a course section, and a clean layout tailored for academic content.",
+            image: "/ime.png",
+            tech: ["React.js", "JavaScript", "CSS", "Netlify"],
+            links: {
+              website: "https://ime-college.vercel.app/",
+              source: "https://github.com/sahilbajaj2004/IME",
+            },
+          },
+          {
+            title: "Todo List App",
             subtitle: "March 2025",
             description:
-              "A real-time cryptocurrency tracker dashboard with price alerts, portfolio management, and interactive charts. Integrates with multiple APIs for up-to-date market data.",
-            image: "/crypto-tracker.png",
+              "A Firebase-powered Todo app with user login, real-time task sync, and a modern UI. Includes CRUD features, authentication, and persistent data storage.",
+            image: "/todo.png",
             tech: [
-              "React",
+              "Next.js",
               "TypeScript",
-              "Chart.js",
               "TailwindCSS",
-              "CoinGecko API",
+              "Shadcn UI",
+              "Netlify",
             ],
             links: {
-              website: "#",
-              source: "#",
+              website: "https://todo-bajaj.vercel.app/",
+              source: "https://github.com/sahilbajaj2004/todo",
+            },
+          },
+          {
+            title: "Nike Landing Page",
+            subtitle: "May 2025",
+            description:
+              "Built a sleek landing page concept for Nike showcasing product collections, CTA sections, and animations. Emphasized responsive layout and brand-focused design.",
+            image: "/Nike.png",
+            tech: [
+              "React.js",
+              "JavaScript",
+              "TailwindCSS",
+              "Shadcn UI",
+              "Netlify",
+            ],
+            links: {
+              website: "https://nikewebsiite.netlify.app/",
+              source: "https://github.com/sahilbajaj2004/Nike",
             },
           },
         ].map((project, index) => (
@@ -151,11 +140,7 @@ export default function ProjectsSection() {
                   }}
                   asChild
                 >
-                  <a
-                    href={project.links.source}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
+                  <a href={project.links.source}>
                     <FaGithub className="w-3 h-3 mr-1" />
                     Source
                   </a>
@@ -169,11 +154,7 @@ export default function ProjectsSection() {
                   }}
                   asChild
                 >
-                  <a
-                    href={project.links.website}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
+                  <a href={project.links.website}>
                     <ExternalLink className="w-3 h-3 mr-1" />
                     Website
                   </a>

@@ -7,7 +7,7 @@ export default function EducationSection() {
       <div className="flex items-center gap-3">
         <div className="w-10 h-10 rounded-full flex items-center justify-center bg-gray-100 dark:bg-gray-800 overflow-hidden mr-2">
           <Image
-            src="/logos/college.png"
+            src="/ime-logo.png"
             alt="University Logo"
             width={40}
             height={40}
