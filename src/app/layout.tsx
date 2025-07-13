@@ -20,11 +20,11 @@ export const metadata: Metadata = {
     title: "Sahil Bajaj | Portfolio",
     description:
       "Full Stack Developer, Web3 Enthusiast, and Open Source Contributor",
-    url: "https://sahilbajaj.dev", // replace with your actual domain
+    url: "https://sahil-bajaj-portfolio.vercel.app", // replace with your actual domain
     siteName: "Sahil Bajaj Portfolio",
     images: [
       {
-      url: "https://sahilbajaj.dev/webpic.png", // 🔁 Replace with your actual hosted image URL
+        url: "https://sahil-bajaj-portfolio.vercel.app/webpic.png", // 🔁 Replace with your actual hosted image URL
         width: 1200,
         height: 630,
         alt: "Sahil Bajaj Portfolio Preview",
@@ -32,7 +32,7 @@ export const metadata: Metadata = {
     ],
     type: "website",
   },
-  metadataBase: new URL("https://sahilbajaj.dev"), // Helps generate absolute URLs
+  metadataBase: new URL("https://sahil-bajaj-portfolio.vercel.app"), // Helps generate absolute URLs
 };
 
 export default function RootLayout({
