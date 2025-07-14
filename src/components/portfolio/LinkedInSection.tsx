@@ -33,7 +33,6 @@ export default function LinkedInSection() {
     },
   ];
 
-
   return (
     <section className="mb-12">
       <div className="text-center mb-8">

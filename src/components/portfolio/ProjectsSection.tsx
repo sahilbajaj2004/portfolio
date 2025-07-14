@@ -134,27 +134,36 @@ export default function ProjectsSection() {
                 <Button
                   size="sm"
                   variant="outline"
-                  className="h-7 px-3 text-sm bg-black border-black text-white dark:bg-white dark:text-black"
+                  className="h-7 px-3 text-sm bg-black border-black text-white hover:text-white dark:bg-white dark:text-black dark:hover:text-white"
                   style={{
                     borderColor: "rgba(120,120,120,0.08)",
                   }}
                   asChild
                 >
-                  <a href={project.links.source}>
+                  <a
+                    href={project.links.source}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     <FaGithub className="w-3 h-3 mr-1" />
                     Source
                   </a>
                 </Button>
+
                 <Button
                   size="sm"
                   variant="outline"
-                  className="h-7 px-3 text-sm bg-black border-black text-white dark:bg-white dark:text-black"
+                  className="h-7 px-3 text-sm bg-black border-black text-white hover:text-white dark:bg-white dark:text-black dark:hover:text-white"
                   style={{
                     borderColor: "rgba(120,120,120,0.08)",
                   }}
                   asChild
                 >
-                  <a href={project.links.website}>
+                  <a
+                    href={project.links.website}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     <ExternalLink className="w-3 h-3 mr-1" />
                     Website
                   </a>

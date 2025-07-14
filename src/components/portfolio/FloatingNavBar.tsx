@@ -15,7 +15,7 @@ export default function FloatingNavBar({
       {/* Floating Navigation Bar */}
       <div className="bg-gray-50/90 dark:bg-[#18181b]/90 backdrop-blur-md rounded-full px-4 py-2 shadow-lg border border-gray-300/80 dark:border-gray-700/50">
         <div className="flex items-center gap-1.5">
-          {/* First icon - Scroll to top */}
+          {/* Scroll to top button */}
           <button
             onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
             className="p-2 rounded-full bg-transparent hover:bg-gray-100 dark:hover:bg-[#232329] transition-all duration-200 hover:scale-105 active:scale-95 group mx-0.5 cursor-pointer"
@@ -23,29 +23,52 @@ export default function FloatingNavBar({
           >
             <Home className="w-5 h-5 text-gray-900 dark:text-gray-100 group-hover:mx-1 transition-all duration-200" />
           </button>
+
           {/* Divider */}
           <span className="h-6 w-px bg-gray-900 dark:bg-gray-700 mx-2" />
-          {/* Middle icons */}
+
+          {/* Social + Mail links */}
           {[
-            { icon: FaGithub, href: "https://github.com/sahilbajaj2004" },
+            {
+              icon: FaGithub,
+              href: "https://github.com/sahilbajaj2004",
+              target: "_blank",
+              rel: "noopener noreferrer",
+            },
             {
               icon: FaLinkedin,
               href: "https://www.linkedin.com/in/sahilbajaj2004",
+              target: "_blank",
+              rel: "noopener noreferrer",
             },
-            { icon: FaXTwitter, href: "https://x.com/SahilBajaj2004" },
-            { icon: Mail, href: "mailto:sahilbajaj2004@gmail.com" },
+            {
+              icon: FaXTwitter,
+              href: "https://x.com/SahilBajaj2004",
+              target: "_blank",
+              rel: "noopener noreferrer",
+            },
+            {
+              icon: Mail,
+              href: "mailto:sahilbajaj2004@gmail.com",
+              target: "_blank",
+              rel: "noopener noreferrer",
+            },
           ].map((item, index) => (
             <a
               key={index}
               href={item.href}
+              target={item.target}
+              rel={item.rel}
               className="p-2 rounded-full bg-transparent hover:bg-gray-100 dark:hover:bg-[#232329] transition-all duration-200 hover:scale-105 active:scale-95 group mx-0.5 cursor-pointer flex items-center justify-center"
               style={{ minWidth: 40, minHeight: 36 }}
             >
               <item.icon className="w-5 h-5 text-gray-900 dark:text-gray-100 group-hover:mx-1 transition-all duration-200" />
             </a>
           ))}
+
           {/* Divider */}
           <span className="h-6 w-px bg-gray-900 dark:bg-gray-700 mx-2" />
+
           {/* Theme Toggle */}
           <button
             onClick={() => setIsDark(!isDark)}

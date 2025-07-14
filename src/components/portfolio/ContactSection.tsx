@@ -12,6 +12,8 @@ export default function ContactSection() {
         <br />
         <a
           href="https://www.linkedin.com/in/sahilbajaj2004"
+          target="_blank"
+          rel="noopener noreferrer"
           className="text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 transition-colors"
         >
           with a direct question on LinkedIn
