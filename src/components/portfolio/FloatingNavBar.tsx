@@ -1,4 +1,4 @@
-import { Home, Sun, Moon, Mail, } from "lucide-react";
+import { Home, Sun, Moon, Mail } from "lucide-react";
 import { FaGithub, FaLinkedin, FaXTwitter } from "react-icons/fa6";
 
 interface FloatingNavBarProps {
@@ -12,9 +12,9 @@ export default function FloatingNavBar({
 }: FloatingNavBarProps) {
   return (
     <nav className="fixed bottom-4 left-1/2 transform -translate-x-1/2 z-50">
-      <div className="bg-white/90 dark:bg-[#18181b]/90 backdrop-blur-md rounded-full px-4 py-2 shadow-lg border border-gray-200/50 dark:border-gray-700/50">
+      {/* Floating Navigation Bar */}
+      <div className="bg-gray-50/90 dark:bg-[#18181b]/90 backdrop-blur-md rounded-full px-4 py-2 shadow-lg border border-gray-300/80 dark:border-gray-700/50">
         <div className="flex items-center gap-1.5">
-          {/* First icon */}
           {/* First icon - Scroll to top */}
           <button
             onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
