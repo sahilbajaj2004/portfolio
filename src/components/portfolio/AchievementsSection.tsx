@@ -1,3 +1,5 @@
+import React from "react";
+
 export default function AchievementsSection() {
   const achievements = [
     {
@@ -24,7 +26,10 @@ export default function AchievementsSection() {
         <div className="inline-block px-3 py-1 text-lg font-bold rounded-md mb-4 shadow border border-gray-200/80 dark:border-gray-700/80 bg-gray-900 text-white dark:bg-white dark:text-gray-900">
           Achievement
         </div>
-        <h2 className="text-3xl font-bold mb-2">I like building things</h2>
+        {/* Adjusted H2 text color for light and dark mode */}
+        <h2 className="text-3xl font-bold mb-2 text-gray-900 dark:text-white">
+          I like building things
+        </h2>
         <p className="text-gray-700 dark:text-gray-300 text-base">
           During my free time, I enjoy working on side projects and
           <br />
@@ -40,7 +45,7 @@ export default function AchievementsSection() {
           <div key={index} className="flex items-start gap-6">
             {/* Larger Icon */}
             <div className="w-16 h-16 rounded-full bg-white dark:bg-black border border-gray-300 dark:border-gray-700 flex items-center justify-center">
-              {/* eslint-disable @next/next/no-img-element */ }
+              {/* eslint-disable @next/next/no-img-element */}
               <img
                 src={item.icon}
                 alt={item.title}
@@ -53,11 +58,13 @@ export default function AchievementsSection() {
               <p className="text-sm text-gray-400 dark:text-gray-500 mb-1">
                 {item.date}
               </p>
-              <h3 className="font-semibold text-white dark:text-white text-base mb-1">
+              {/* Adjusted H3 text color for light and dark mode */}
+              <h3 className="font-semibold text-gray-900 dark:text-white text-base mb-1">
                 {item.title}
               </h3>
               <p className="text-sm text-blue-400 mb-1">{item.location}</p>
-              <p className="text-sm text-gray-300 dark:text-gray-400 leading-relaxed">
+              {/* Adjusted description text color for light and dark mode */}
+              <p className="text-sm text-gray-700 dark:text-gray-400 leading-relaxed">
                 {item.description}
               </p>
 
