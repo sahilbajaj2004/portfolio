@@ -40,6 +40,7 @@ export default function AchievementsSection() {
           <div key={index} className="flex items-start gap-6">
             {/* Larger Icon */}
             <div className="w-16 h-16 rounded-full bg-white dark:bg-black border border-gray-300 dark:border-gray-700 flex items-center justify-center">
+              {/* eslint-disable @next/next/no-img-element */ }
               <img
                 src={item.icon}
                 alt={item.title}
