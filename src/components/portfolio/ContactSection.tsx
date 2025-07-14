@@ -7,13 +7,19 @@ export default function ContactSection() {
         Contact
       </div>
       <h2 className="text-3xl font-bold mb-2">Get in Touch</h2>
-      <p className="text-gray-700 dark:text-gray-300 text-base mb-4">
-        Want to chat? Just shoot me a DM with a direct question on
+      <p className="text-lg text-gray-700 dark:text-gray-300 mb-4 leading-relaxed">
+        Want to chat? Just shoot me a dm
         <br />
-        Twitter and I&apos;ll respond whenever I can. I will ignore all
-        <br />
-        soliciting.
+        <a
+          href="https://www.linkedin.com/in/sahilbajaj2004"
+          className="text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 transition-colors"
+        >
+          with a direct question on LinkedIn
+        </a>{" "}
+        and I&apos;ll respond whenever I can.
+        <br />I will ignore all soliciting.
       </p>
+
       <div className="flex justify-center mt-6">
         <a
           href="/SahilBajajResume.pdf"

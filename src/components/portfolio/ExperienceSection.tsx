@@ -10,25 +10,25 @@ export default function ExperienceSection() {
             company: "Prerna Institution",
             role: "Fullstack developer, Teacher",
             period: "Jan 2022 - May 2023",
-            logo: "/logos/microsoft.png",
+            logo: "/p-logo.png",
           },
           {
             company: "Razorse software pvt ltd",
             role: "Frontend Intern",
             period: "May 2025 - August 2025",
-            logo: "/logos/amazon.png",
+            logo: "/rez-logo.jpg",
           },
           {
             company: "DevCeafter",
             role: "Founder",
             period: "January 2025 - present",
-            logo: "/logos/netflix.png",
+            logo: "/dev-logo.jpg",
           },
           {
             company: "Fiverr, Freelancer",
             role: "Freelancing",
             period: "July 2024 - Present",
-            logo: "/logos/apple.png",
+            logo: "/free-logo.jpg",
           },
         ].map((exp, index) => (
           <div key={index} className="flex items-center gap-3">
@@ -38,7 +38,7 @@ export default function ExperienceSection() {
                 alt={exp.company}
                 width={36}
                 height={36}
-                className="object-contain w-9 h-9"
+                className="object-contain w-10 h-10"
               />
             </div>
             <div className="flex-1">

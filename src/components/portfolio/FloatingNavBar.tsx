@@ -15,7 +15,9 @@ export default function FloatingNavBar({
       <div className="bg-white/90 dark:bg-[#18181b]/90 backdrop-blur-md rounded-full px-4 py-2 shadow-lg border border-gray-200/50 dark:border-gray-700/50">
         <div className="flex items-center gap-1.5">
           {/* First icon */}
+          {/* First icon - Scroll to top */}
           <button
+            onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
             className="p-2 rounded-full bg-transparent hover:bg-gray-100 dark:hover:bg-[#232329] transition-all duration-200 hover:scale-105 active:scale-95 group mx-0.5 cursor-pointer"
             style={{ minWidth: 40, minHeight: 36 }}
           >

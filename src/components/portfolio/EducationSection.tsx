@@ -7,11 +7,11 @@ export default function EducationSection() {
       <div className="flex items-center gap-3">
         <div className="w-10 h-10 rounded-full flex items-center justify-center bg-gray-100 dark:bg-gray-800 overflow-hidden mr-2">
           <Image
-            src="/ime-logo.png"
+            src="/ime-logo.jpg"
             alt="University Logo"
-            width={40}
-            height={40}
-            className="object-contain w-9 h-9"
+            width={42}
+            height={42}
+            className="object-contain w-10 h-10"
           />
         </div>
         <div className="flex-1">
