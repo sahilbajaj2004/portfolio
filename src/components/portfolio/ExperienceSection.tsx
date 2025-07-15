@@ -9,7 +9,7 @@ export default function ExperienceSection() {
           {
             company: "Prerna Institution",
             role: "Fullstack developer, Teacher",
-            period: "Jan 2022 - May 2023",
+            period: "Jan 2022 - Present",
             logo: "/p-logo.png",
           },
           {
