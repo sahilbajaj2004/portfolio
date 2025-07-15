@@ -134,7 +134,7 @@ export default function ProjectsSection() {
                 <Button
                   size="sm"
                   variant="outline"
-                  className="h-7 px-3 text-sm bg-black border-black text-white hover:text-white dark:bg-white dark:text-black dark:hover:text-white"
+                  className="h-7 px-3 text-sm bg-black border-black text-white hover:text-black dark:bg-white dark:text-black dark:hover:text-white"
                   style={{
                     borderColor: "rgba(120,120,120,0.08)",
                   }}
@@ -153,7 +153,7 @@ export default function ProjectsSection() {
                 <Button
                   size="sm"
                   variant="outline"
-                  className="h-7 px-3 text-sm bg-black border-black text-white hover:text-white dark:bg-white dark:text-black dark:hover:text-white"
+                  className="h-7 px-3 text-sm bg-black border-black text-white hover:text-black dark:bg-white dark:text-black dark:hover:text-white"
                   style={{
                     borderColor: "rgba(120,120,120,0.08)",
                   }}
