@@ -1,4 +1,5 @@
-import { Home, Sun, Moon, Mail } from "lucide-react";
+import { Home, Sun, Moon, Mail, } from "lucide-react";
+// import { Phone } from "lucide-react";
 import { FaGithub, FaLinkedin, FaXTwitter } from "react-icons/fa6";
 
 interface FloatingNavBarProps {
@@ -53,6 +54,12 @@ export default function FloatingNavBar({
               target: "_blank",
               rel: "noopener noreferrer",
             },
+            // {
+            //   icon: Phone,
+            //   href: "tel:+919811057531",
+            //   target: "_blank",
+            //   rel: "noopener noreferrer",
+            // },
           ].map((item, index) => (
             <a
               key={index}
