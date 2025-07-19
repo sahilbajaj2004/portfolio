@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://sahil-bajaj-portfolio.vercel.app
+
+# Sitemaps
+Sitemap: https://sahil-bajaj-portfolio.vercel.app/sitemap.xml
