@@ -66,7 +66,6 @@ export default function FloatingNavBar({
             )}
           </button>
 
-          <span className="h-6 w-px bg-gray-900 dark:bg-gray-700 mx-2" />
 
           {/* Theme Toggle */}
           <button
