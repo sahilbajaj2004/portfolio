@@ -24,16 +24,16 @@ export const metadata: Metadata = {
     "Node.js",
     "Portfolio",
   ],
-  metadataBase: new URL("https://sahil-bajaj-portfolio.vercel.app"),
+  metadataBase: new URL("https://sahilbajajportfolio.vercel.app"),
   openGraph: {
     title: "Sahil Bajaj | Full-Stack Developer Portfolio",
     description:
       "Explore the portfolio of Sahil Bajaj — full-stack MERN developer, Web3 enthusiast, and open-source contributor.",
-    url: "https://sahil-bajaj-portfolio.vercel.app",
+    url: "https://sahilbajajportfolio.vercel.app",
     siteName: "Sahil Bajaj Portfolio",
     images: [
       {
-        url: "https://sahil-bajaj-portfolio.vercel.app/webpic.png", // ✅ Replace with your actual OpenGraph image if you update it later
+        url: "https://sahilbajajportfolio.vercel.app/webpic.png", // ✅ Replace with your actual OpenGraph image if you update it later
         width: 1200,
         height: 630,
         alt: "Preview of Sahil Bajaj’s developer portfolio website",
@@ -46,7 +46,7 @@ export const metadata: Metadata = {
     title: "Sahil Bajaj | Full-Stack Developer",
     description:
       "Developer portfolio of Sahil Bajaj — MERN, Web3, open-source projects, and more.",
-    images: ["https://sahil-bajaj-portfolio.vercel.app/webpic.png"],
+    images: ["https://sahilbajajportfolio.vercel.app/webpic.png"],
     creator: "@SahilBajaj2004", // ✅ Your Twitter username (already correct)
   },
   robots: {
@@ -74,7 +74,7 @@ export default function RootLayout({
               "@context": "https://schema.org",
               "@type": "Person",
               name: "Sahil Bajaj",
-              url: "https://sahil-bajaj-portfolio.vercel.app",
+              url: "https://sahilbajajportfolio.vercel.app",
               sameAs: [
                 "https://linkedin.com/in/sahilbajaj2004",
                 "https://github.com/sahilbajaj2004",
