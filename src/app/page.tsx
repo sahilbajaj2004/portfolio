@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import Crosshair from "@/components/ui/Crosshair";
 import HeaderSection from "@/components/portfolio/HeaderSection";
 import AboutSection from "@/components/portfolio/AboutSection";
@@ -15,6 +15,8 @@ import FloatingNavBar from "@/components/portfolio/FloatingNavBar";
 
 export default function Portfolio() {
   const [isDark, setIsDark] = useState(true);
+  const [isPlaying, setIsPlaying] = useState(true); // for music state
+  const audioRef = useRef<HTMLAudioElement>(null);
 
   useEffect(() => {
     if (isDark) {
@@ -24,8 +26,22 @@ export default function Portfolio() {
     }
   }, [isDark]);
 
+  // Play/Pause handler
+  const toggleAudio = () => {
+    if (!audioRef.current) return;
+    if (isPlaying) {
+      audioRef.current.pause();
+    } else {
+      audioRef.current.play();
+    }
+    setIsPlaying(!isPlaying);
+  };
+
   return (
     <div className="min-h-screen bg-background text-foreground transition-colors duration-300">
+      {/* Background Audio */}
+      <audio ref={audioRef} src="/bgaudio.mp3" autoPlay loop />
+
       <div className="hidden sm:block">
         <Crosshair color={isDark ? "white" : "black"} />
       </div>
@@ -40,7 +56,12 @@ export default function Portfolio() {
         <LinkedInSection />
         <ContactSection />
       </div>
-      <FloatingNavBar isDark={isDark} setIsDark={setIsDark} />
+      <FloatingNavBar
+        isDark={isDark}
+        setIsDark={setIsDark}
+        isPlaying={isPlaying}
+        toggleAudio={toggleAudio}
+      />
     </div>
   );
 }
