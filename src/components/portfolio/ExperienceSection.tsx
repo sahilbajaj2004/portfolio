@@ -15,7 +15,7 @@ export default function ExperienceSection() {
           {
             company: "Razorse software pvt ltd",
             role: "Frontend Intern",
-            period: "May 2025 - August 2025",
+            period: "May 2025 - July 2025",
             logo: "/rez-logo.jpg",
           },
           {
