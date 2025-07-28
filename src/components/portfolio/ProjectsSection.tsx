@@ -131,13 +131,15 @@ export default function ProjectsSection() {
       </div>
 
       {/* Show More Button */}
-      <div className="flex justify-center mt-6">
-        <Button
-          className="px-6 py-2 text-lg bg-gray-900 text-white hover:bg-gray-700 dark:bg-white dark:text-black dark:hover:bg-gray-300 rounded-full"
+      <div className="flex justify-center mt-4">
+        <button
           onClick={() => setShowAll(true)}
+          className="text-sm font-medium px-4 py-1.5 rounded-md 
+               bg-blue-700 text-white 
+               hover:bg-blue-800 transition-colors"
         >
           Show More
-        </Button>
+        </button>
       </div>
 
       {/* Fullscreen Expanded Projects */}
