@@ -21,6 +21,42 @@ export default function ProjectsSection() {
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
         {[
           {
+            title: "pi3.14",
+            subtitle: "june 2025",
+            description:
+              "A comprehensive platform for developers to showcase their skills, projects, and connect with potential employers. Features include user profiles, project portfolios, and a job board.",
+            image: "/Pi3.14.png",
+            tech: [
+              "Next.js",
+              "TypeScript",
+              "TailwindCSS",
+              "Shadcn UI",
+              "Vercel",
+            ],
+            links: {
+              website: "https://picommunity.vercel.app/",
+              source: "https://github.com/sahilbajaj2004/pi",
+            },
+          },
+          {
+            title: "DevCrafter",
+            subtitle: "July 2025",
+            description:
+              "An agency that builds custom websites and applications for clients. The site showcases our portfolio, services, and client testimonials.",
+            image: "/DevCrafter.png",
+            tech: [
+              "React.js",
+              "JavaScript",
+              "TailwindCSS",
+              "Shadcn UI",
+              "Vercel",
+            ],
+            links: {
+              website: "https://devcrafter.vercel.app/",
+              source: "https://github.com/sahilbajaj2004/devcrafter",
+            },
+          },
+          {
             title: "Prerna Institution",
             subtitle: "Jan 2025",
             description:
@@ -48,42 +84,6 @@ export default function ProjectsSection() {
             links: {
               website: "https://ime-college.vercel.app/",
               source: "https://github.com/sahilbajaj2004/IME",
-            },
-          },
-          {
-            title: "Todo List App",
-            subtitle: "March 2025",
-            description:
-              "A Firebase-powered Todo app with user login, real-time task sync, and a modern UI. Includes CRUD features, authentication, and persistent data storage.",
-            image: "/todo.png",
-            tech: [
-              "Next.js",
-              "TypeScript",
-              "TailwindCSS",
-              "Shadcn UI",
-              "Netlify",
-            ],
-            links: {
-              website: "https://todo-bajaj.vercel.app/",
-              source: "https://github.com/sahilbajaj2004/todo",
-            },
-          },
-          {
-            title: "Nike Landing Page",
-            subtitle: "May 2025",
-            description:
-              "Built a sleek landing page concept for Nike showcasing product collections, CTA sections, and animations. Emphasized responsive layout and brand-focused design.",
-            image: "/Nike.png",
-            tech: [
-              "React.js",
-              "JavaScript",
-              "TailwindCSS",
-              "Shadcn UI",
-              "Netlify",
-            ],
-            links: {
-              website: "https://nikewebsiite.netlify.app/",
-              source: "https://github.com/sahilbajaj2004/Nike",
             },
           },
         ].map((project, index) => (
