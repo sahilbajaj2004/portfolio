@@ -15,7 +15,7 @@ import FloatingNavBar from "@/components/portfolio/FloatingNavBar";
 
 export default function Portfolio() {
   const [isDark, setIsDark] = useState(true);
-  const [isPlaying, setIsPlaying] = useState(true); // for music state
+  const [isPlaying, setIsPlaying] = useState(false); // Changed from true to false
   const audioRef = useRef<HTMLAudioElement>(null);
 
   useEffect(() => {
@@ -39,8 +39,8 @@ export default function Portfolio() {
 
   return (
     <div className="min-h-screen bg-background text-foreground transition-colors duration-300">
-      {/* Background Audio */}
-      <audio ref={audioRef} src="/bgaudio.mp3" autoPlay loop />
+      {/* Background Audio - removed autoPlay */}
+      <audio ref={audioRef} src="/bgaudio.mp3" loop />
 
       <div className="hidden sm:block">
         <Crosshair color={isDark ? "white" : "black"} />
