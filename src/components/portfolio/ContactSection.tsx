@@ -24,7 +24,7 @@ export default function ContactSection() {
 
       <div className="flex justify-center mt-6">
         <a
-          href="/SahilBajajResume.pdf"
+          href="/SahilBajaj.pdf"
           download
           className="inline-flex items-center gap-2 px-4 py-2 rounded-4xl bg-blue-900 text-white dark:bg-blue-800 dark:text-white font-semibold shadow hover:bg-blue-950 dark:hover:bg-blue-700 transition-colors"
         >
