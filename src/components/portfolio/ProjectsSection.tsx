@@ -25,7 +25,7 @@ export default function ProjectsSection() {
             subtitle: "june 2025",
             description:
               "A comprehensive platform for developers to showcase their skills, projects, and connect with potential employers. Features include user profiles, project portfolios, and a job board.",
-            image: "/Pi3.14.png",
+            image: "https://www.sahilbajaj.me/Pi3.14.png",
             tech: [
               "Next.js",
               "TypeScript",
@@ -43,7 +43,7 @@ export default function ProjectsSection() {
             subtitle: "July 2025",
             description:
               "An agency that builds custom websites and applications for clients. The site showcases our portfolio, services, and client testimonials.",
-            image: "/DevCrafter.png",
+            image: "https://www.sahilbajaj.me/DevCrafter.png",
             tech: [
               "React.js",
               "JavaScript",
@@ -61,7 +61,7 @@ export default function ProjectsSection() {
             subtitle: "Jan 2025",
             description:
               "Developed a modern and responsive landing page for Prerna Institution with details about the institute, programs, and contact. Built using Next.js and Flask for dynamic content handling.",
-            image: "/Prerna.png",
+            image: "https://www.sahilbajaj.me/Prerna.png",
             tech: [
               "Next.js",
               "TypeScript",
@@ -79,7 +79,7 @@ export default function ProjectsSection() {
             subtitle: "April 2025",
             description:
               "Created a clean, fast-loading website for IME College. It includes responsive design, smooth animations, a course section, and a clean layout tailored for academic content.",
-            image: "/ime.png",
+            image: "https://www.sahilbajaj.me/ime.png",
             tech: ["React.js", "JavaScript", "CSS", "Netlify"],
             links: {
               website: "https://ime-college.vercel.app/",

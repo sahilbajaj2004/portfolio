@@ -8,7 +8,7 @@ export default function AchievementsSection() {
       location: "Delhi, Noida",
       description:
         "Won top recognition on the third day of the Bharat Shiksha Expo 2025 for designing and developing an AI-powered chatbot. The solution stood out for its conversational intelligence, real-time response accuracy, and its potential to improve user interaction in education and service-based platforms. Built using modern NLP techniques and integrated with dynamic intent handling, the bot was praised for both its functionality and presentation.",
-      icon: "/expo.png",
+      icon: "https://www.sahilbajaj.me/expo.png",
     },
     {
       date: "March 24th, 2025",
@@ -16,7 +16,7 @@ export default function AchievementsSection() {
       location: "Gaziabad, Uttar Pradesh",
       description:
         "Secured second place in Techno Hack for developing a high-impact solution under time constraints. The project was recognized for its innovation, clean architecture, and practical real-world applicability.",
-      icon: "/techno.png",
+      icon: "https://www.sahilbajaj.me/techno.png",
     },
   ];
 

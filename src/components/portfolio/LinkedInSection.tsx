@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { FaLinkedin } from "react-icons/fa6";
+// import { imageUrls } from "@/lib/imageUrls";
 
 export default function LinkedInSection() {
   const posts = [
@@ -7,28 +8,28 @@ export default function LinkedInSection() {
       heading: "FingerSense — AI-Based Gesture Censorship",
       content:
         "Built an AI-driven hand gesture detection system using React.js and MediaPipe. It censors offensive gestures live with OpenCV, and handles gesture history to avoid false positives. Integrated Firebase for user-authenticated sessions.",
-      video: "/post1.mp4",
+      video: "https://www.sahilbajaj.me/post1.mp4",
       link: "https://www.linkedin.com/posts/sahilbajaj2004_python-computervision-opencv-activity-7332302934551977985-Vfm1?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEFdtP8BEHJ8BNVyk-uIxiIaTqi7exGAY-k",
     },
     {
       heading: "Doc Converter with Python",
       content:
         "Developed a React.js frontend tool backed by a Python engine to convert docs across formats (PDF, DOCX, TXT). Firebase Authentication manages user access. Clean UI, real-time status updates, and file history included.",
-      video: "/post2.mp4",
+      video: "https://www.sahilbajaj.me/post2.mp4",
       link: "https://www.linkedin.com/posts/sahilbajaj2004_webdev-python-nextjs-activity-7348312000625553408-RmCe?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEFdtP8BEHJ8BNVyk-uIxiIaTqi7exGAY-k",
     },
     {
       heading: "AI Chatbot with Voice Assistant",
       content:
         "Built a fully functional AI chatbot with voice command support using React.js and Web Speech API. Used Firebase Authentication to secure user interactions. The assistant understands context, replies smartly, and speaks responses aloud.",
-      image: "/post3.jpg",
+      image: "https://www.sahilbajaj.me/post3.jpg",
       link: "https://www.linkedin.com/posts/sahilbajaj2004_ai-virtualassistant-woho-activity-7329815767208689664-3o2P?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEFdtP8BEHJ8BNVyk-uIxiIaTqi7exGAY-k",
     },
     {
       heading: "Winner of Bharat Shiksha Expo 2024",
       content:
         "Awarded for building an education tech solution using React.js with Firebase-backed user authentication. The project connected teachers and students in real time, offering secure dashboards and learning insights.",
-      image: "/post4.png",
+      image: "https://www.sahilbajaj.me/post4.png",
       link: "https://www.linkedin.com/posts/sahilbajaj2004_bharatshikshaexpo-education-networking-activity-7321940531645759489-J6Tl?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEFdtP8BEHJ8BNVyk-uIxiIaTqi7exGAY-k",
     },
   ];
@@ -66,7 +67,7 @@ export default function LinkedInSection() {
                 >
                   <div className="w-11 h-11 bg-blue-100 dark:bg-blue-900 rounded-full flex items-center justify-center overflow-hidden">
                     <Image
-                      src="/bajaj.jpg"
+                      src="https://www.sahilbajaj.me/profile.jpg"
                       alt="Sahil Bajaj"
                       width={44}
                       height={44}

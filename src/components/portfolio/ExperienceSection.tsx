@@ -10,25 +10,25 @@ export default function ExperienceSection() {
             company: "Prerna Institution",
             role: "Fullstack developer, Teacher",
             period: "Jan 2022 - Present",
-            logo: "/p-logo.png",
+            logo: "https://www.sahilbajaj.me/p-logo.png",
           },
           {
             company: "Razorse software pvt ltd",
             role: "Frontend Intern",
             period: "May 2025 - July 2025",
-            logo: "/rez-logo.jpg",
+            logo: "https://www.sahilbajaj.me/rez-logo.jpg",
           },
           {
             company: "DevCeafter",
             role: "Founder",
             period: "January 2025 - Present",
-            logo: "/dev-logo.jpg",
+            logo: "https://www.sahilbajaj.me/dev-logo.jpg",
           },
           {
             company: "Fiverr, Freelancer",
             role: "Freelancing",
             period: "July 2024 - Present",
-            logo: "/free-logo.jpg",
+            logo: "https://www.sahilbajaj.me/free-logo.jpg",
           },
         ].map((exp, index) => (
           <div key={index} className="flex items-center gap-3">
