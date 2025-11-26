@@ -13,6 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
+  applicationName: "Sahil Bajaj",
   title: "Sahil Bajaj | Full-Stack Developer Portfolio",
   description:
     "Full Stack MERN Developer building performant, modern web apps. Explore projects, experience, and skills.",
