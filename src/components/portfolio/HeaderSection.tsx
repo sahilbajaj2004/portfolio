@@ -33,7 +33,7 @@ export default function HeaderSection() {
       </div>
       <div className="w-44 h-44 rounded-full overflow-hidden ml-auto border-4 border-gray-200 dark:border-gray-700 shadow-lg">
         <Image
-          src="https://www.sahilbajaj.me/bajaj.jpg"
+          src="./bajaj.jpg"
           alt="Sahil Bajaj"
           width={176}
           height={176}
