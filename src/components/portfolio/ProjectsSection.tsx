@@ -21,29 +21,11 @@ export default function ProjectsSection() {
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
         {[
           {
-            title: "pi3.14",
-            subtitle: "june 2025",
-            description:
-              "A comprehensive platform for developers to showcase their skills, projects, and connect with potential employers. Features include user profiles, project portfolios, and a job board.",
-            image: "https://www.sahilbajaj.me/Pi3.14.png",
-            tech: [
-              "Next.js",
-              "TypeScript",
-              "TailwindCSS",
-              "Shadcn UI",
-              "Vercel",
-            ],
-            links: {
-              website: "https://picommunity.vercel.app/",
-              source: "https://github.com/sahilbajaj2004/pi",
-            },
-          },
-          {
-            title: "DevCrafter",
+            title: "SoberDev",
             subtitle: "July 2025",
             description:
               "An agency that builds custom websites and applications for clients. The site showcases our portfolio, services, and client testimonials.",
-            image: "https://www.sahilbajaj.me/DevCrafter.png",
+            image: "/sober.png",
             tech: [
               "React.js",
               "JavaScript",
@@ -52,38 +34,20 @@ export default function ProjectsSection() {
               "Vercel",
             ],
             links: {
-              website: "https://devcrafter.vercel.app/",
+              website: "https://soberdev.in/",
               source: "https://github.com/sahilbajaj2004/devcrafter",
             },
           },
           {
-            title: "Prerna Institution",
-            subtitle: "Jan 2025",
+            title: "AlgoAnalyzer",
+            subtitle: "May 2026",
             description:
-              "Developed a modern and responsive landing page for Prerna Institution with details about the institute, programs, and contact. Built using Next.js and Flask for dynamic content handling.",
-            image: "https://www.sahilbajaj.me/Prerna.png",
-            tech: [
-              "Next.js",
-              "TypeScript",
-              "TailwindCSS",
-              "Shadcn UI",
-              "Vercel",
-            ],
+              "A learning platform that helps users understand DSA in an easy format with step-by-step visuals and explanations.",
+            image: "/algo.png",
+            tech: ["Next.js", "TypeScript", "TailwindCSS", "Vercel"],
             links: {
-              website: "https://prernainstitution.vercel.app/",
-              source: "https://github.com/sahilbajaj2004/institute",
-            },
-          },
-          {
-            title: "Ime College Website",
-            subtitle: "April 2025",
-            description:
-              "Created a clean, fast-loading website for IME College. It includes responsive design, smooth animations, a course section, and a clean layout tailored for academic content.",
-            image: "https://www.sahilbajaj.me/ime.png",
-            tech: ["React.js", "JavaScript", "CSS", "Netlify"],
-            links: {
-              website: "https://ime-college.vercel.app/",
-              source: "https://github.com/sahilbajaj2004/IME",
+              website: "https://algo-analyzer.vercel.app/",
+              source: "https://github.com/sahilbajaj2004",
             },
           },
         ].map((project, index) => (
@@ -172,6 +136,18 @@ export default function ProjectsSection() {
             </div>
           </div>
         ))}
+      </div>
+
+      <div className="mt-6 flex justify-center">
+        <a
+          href="https://github.com/sahilbajaj2004"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-flex items-center gap-2 rounded-full border border-gray-200/80 dark:border-gray-700/80 px-4 py-2 text-sm font-semibold text-gray-900 dark:text-gray-100 bg-white/80 dark:bg-[#18181b] transition-colors hover:bg-gray-900 hover:text-white dark:hover:bg-white dark:hover:text-gray-900"
+        >
+          <FaGithub className="w-4 h-4" />
+          For more visit GitHub
+        </a>
       </div>
     </section>
   );
