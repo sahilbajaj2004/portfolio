@@ -47,7 +47,7 @@ export default function ProjectsSection() {
             tech: ["Next.js", "TypeScript", "TailwindCSS", "Vercel"],
             links: {
               website: "https://algo-analyzer.vercel.app/",
-              source: "https://github.com/sahilbajaj2004",
+              source: "https://github.com/sahilbajaj2004/AlgoAnalyzer",
             },
           },
         ].map((project, index) => (
