@@ -21,8 +21,9 @@ export default function FloatingNavBar({
           {/* Scroll to top */}
           <button
             onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-            className="p-2 rounded-full hover:bg-gray-100 dark:hover:bg-[#232329] transition-all duration-200 hover:scale-105 active:scale-95"
-            style={{ minWidth: 40, minHeight: 36 }}
+            className="p-2 min-w-10 min-h-9 rounded-full hover:bg-gray-100 dark:hover:bg-[#232329] transition-all duration-200 hover:scale-105 active:scale-95"
+            aria-label="Scroll to top"
+            title="Scroll to top"
           >
             <Home className="w-5 h-5 text-gray-900 dark:text-gray-100" />
           </button>
@@ -31,21 +32,31 @@ export default function FloatingNavBar({
 
           {/* Social Links */}
           {[
-            { icon: FaGithub, href: "https://github.com/sahilbajaj2004" },
+            {
+              icon: FaGithub,
+              href: "https://github.com/sahilbajaj2004",
+              label: "GitHub",
+            },
             {
               icon: FaLinkedin,
               href: "https://www.linkedin.com/in/sahilbajaj2004",
+              label: "LinkedIn",
             },
-            { icon: FaXTwitter, href: "https://x.com/SahilBajaj2004" },
-            { icon: Mail, href: "mailto:sahilbajaj2004@gmail.com" },
+            { icon: FaXTwitter, href: "https://x.com/SahilBajaj2004", label: "X" },
+            {
+              icon: Mail,
+              href: "mailto:sahilbajaj2004@gmail.com",
+              label: "Email",
+            },
           ].map((item, i) => (
             <a
               key={i}
               href={item.href}
               target="_blank"
               rel="noopener noreferrer"
-              className="p-2 rounded-full hover:bg-gray-100 dark:hover:bg-[#232329] transition-all duration-200 hover:scale-105 active:scale-95"
-              style={{ minWidth: 40, minHeight: 36 }}
+              className="p-2 min-w-10 min-h-9 rounded-full hover:bg-gray-100 dark:hover:bg-[#232329] transition-all duration-200 hover:scale-105 active:scale-95"
+              aria-label={item.label}
+              title={item.label}
             >
               <item.icon className="w-5 h-5 text-gray-900 dark:text-gray-100" />
             </a>
@@ -56,8 +67,9 @@ export default function FloatingNavBar({
           {/* Play/Pause Button */}
           <button
             onClick={toggleAudio}
-            className="p-2 rounded-full hover:bg-gray-100 dark:hover:bg-[#232329] transition-all duration-200 hover:scale-105 active:scale-95"
-            style={{ minWidth: 40, minHeight: 36 }}
+            className="p-2 min-w-10 min-h-9 rounded-full hover:bg-gray-100 dark:hover:bg-[#232329] transition-all duration-200 hover:scale-105 active:scale-95"
+            aria-label={isPlaying ? "Pause audio" : "Play audio"}
+            title={isPlaying ? "Pause audio" : "Play audio"}
           >
             {isPlaying ? (
               <Pause className="w-5 h-5 text-gray-900 dark:text-gray-100" />
@@ -70,8 +82,9 @@ export default function FloatingNavBar({
           {/* Theme Toggle */}
           <button
             onClick={() => setIsDark(!isDark)}
-            className="p-2 rounded-full hover:bg-gray-100/60 dark:hover:bg-[#232329]/60 transition-all duration-200 hover:scale-105 active:scale-95 border-2 border-gray-300/40 dark:border-gray-700/40"
-            style={{ minWidth: 36, minHeight: 36 }}
+            className="p-2 min-w-9 min-h-9 rounded-full hover:bg-gray-100/60 dark:hover:bg-[#232329]/60 transition-all duration-200 hover:scale-105 active:scale-95 border-2 border-gray-300/40 dark:border-gray-700/40"
+            aria-label={isDark ? "Switch to light mode" : "Switch to dark mode"}
+            title={isDark ? "Switch to light mode" : "Switch to dark mode"}
           >
             {isDark ? (
               <Sun className="w-5 h-5" />
