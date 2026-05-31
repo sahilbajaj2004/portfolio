@@ -13,6 +13,7 @@ import AchievementsSection from "@/components/portfolio/AchievementsSection";
 import ContactSection from "@/components/portfolio/ContactSection";
 import FloatingNavBar from "@/components/portfolio/FloatingNavBar";
 import ServicesSection from "@/components/portfolio/ServicesSection";
+import SmoothScroll from "@/components/ui/SmoothScroll";
 
 
 export default function Portfolio() {
@@ -40,31 +41,33 @@ export default function Portfolio() {
   };
 
   return (
-    <div className="min-h-screen bg-background text-foreground transition-colors duration-300">
-      {/* Background Audio - removed autoPlay */}
-      <audio ref={audioRef} src="/bgaudio.mp3" loop />
+    <SmoothScroll>
+      <div className="min-h-screen bg-background text-foreground transition-colors duration-300">
+        {/* Background Audio - removed autoPlay */}
+        <audio ref={audioRef} src="/bgaudio.mp3" loop />
 
-      <div className="hidden sm:block">
-        <Crosshair color={isDark ? "white" : "black"} />
+        <div className="hidden sm:block">
+          <Crosshair color={isDark ? "white" : "black"} />
+        </div>
+        <div className="max-w-5xl mx-auto px-6 py-12 pb-32">
+          <HeaderSection />
+          <AboutSection />
+          <ExperienceSection />
+          <EducationSection />
+          <SkillsSection />
+          <ProjectsSection />
+          <ServicesSection />
+          <AchievementsSection />
+          {/* <LinkedInSection /> */}
+          <ContactSection />
+        </div>
+        <FloatingNavBar
+          isDark={isDark}
+          setIsDark={setIsDark}
+          isPlaying={isPlaying}
+          toggleAudio={toggleAudio}
+        />
       </div>
-      <div className="max-w-5xl mx-auto px-6 py-12 pb-32">
-        <HeaderSection />
-        <AboutSection />
-        <ExperienceSection />
-        <EducationSection />
-        <SkillsSection />
-        <ProjectsSection />
-        <ServicesSection />
-        <AchievementsSection />
-        {/* <LinkedInSection /> */}
-        <ContactSection />
-      </div>
-      <FloatingNavBar
-        isDark={isDark}
-        setIsDark={setIsDark}
-        isPlaying={isPlaying}
-        toggleAudio={toggleAudio}
-      />
-    </div>
+    </SmoothScroll>
   );
 }
