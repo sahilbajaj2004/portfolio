@@ -9,9 +9,11 @@ import EducationSection from "@/components/portfolio/EducationSection";
 import SkillsSection from "@/components/portfolio/SkillsSection";
 import ProjectsSection from "@/components/portfolio/ProjectsSection";
 import AchievementsSection from "@/components/portfolio/AchievementsSection";
-import LinkedInSection from "@/components/portfolio/LinkedInSection";
+// import LinkedInSection from "@/components/portfolio/LinkedInSection";
 import ContactSection from "@/components/portfolio/ContactSection";
 import FloatingNavBar from "@/components/portfolio/FloatingNavBar";
+import ServicesSection from "@/components/portfolio/ServicesSection";
+
 
 export default function Portfolio() {
   const [isDark, setIsDark] = useState(true);
@@ -52,8 +54,9 @@ export default function Portfolio() {
         <EducationSection />
         <SkillsSection />
         <ProjectsSection />
+        <ServicesSection />
         <AchievementsSection />
-        <LinkedInSection />
+        {/* <LinkedInSection /> */}
         <ContactSection />
       </div>
       <FloatingNavBar
