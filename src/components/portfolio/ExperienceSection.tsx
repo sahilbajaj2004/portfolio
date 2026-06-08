@@ -19,7 +19,7 @@ export default function ExperienceSection() {
           //   logo: "https://www.sahilbajaj.me/rez-logo.jpg",
           // },
           {
-            company: "DevCeafter",
+            company: "SoberDev",
             role: "Founder",
             period: "January 2025 - Present",
             logo: "https://www.sahilbajaj.me/dev-logo.jpg",
