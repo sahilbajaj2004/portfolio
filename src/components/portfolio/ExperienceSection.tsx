@@ -12,14 +12,14 @@ export default function ExperienceSection() {
             period: "Jan 2022 - Present",
             logo: "https://www.sahilbajaj.me/p-logo.png",
           },
+          // {
+          //   company: "Razorse software pvt ltd",
+          //   role: "Frontend Intern",
+          //   period: "May 2025 - July 2025",
+          //   logo: "https://www.sahilbajaj.me/rez-logo.jpg",
+          // },
           {
-            company: "Razorse software pvt ltd",
-            role: "Frontend Intern",
-            period: "May 2025 - July 2025",
-            logo: "https://www.sahilbajaj.me/rez-logo.jpg",
-          },
-          {
-            company: "DevCeafter",
+            company: "SoberDev",
             role: "Founder",
             period: "January 2025 - Present",
             logo: "https://www.sahilbajaj.me/dev-logo.jpg",
