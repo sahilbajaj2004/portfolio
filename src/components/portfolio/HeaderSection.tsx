@@ -12,10 +12,10 @@ export default function HeaderSection() {
         </h1>
         <div className="flex flex-wrap gap-1 mb-2">
           <span className="inline-flex items-center px-2 py-0.5 rounded bg-blue-100 text-blue-800 text-sm font-medium dark:bg-blue-900 dark:text-blue-200">
-            Full Stack Developer
+            Software Developer
           </span>
           <span className="inline-flex items-center px-2 py-0.5 rounded bg-green-100 text-green-800 text-sm font-medium dark:bg-green-900 dark:text-green-200">
-            Web3 Enthusiast
+            React Native
           </span>
           <span className="inline-flex items-center px-2 py-0.5 rounded bg-purple-100 text-purple-800 text-sm font-medium dark:bg-purple-900 dark:text-purple-200">
             Open Source
@@ -27,7 +27,7 @@ export default function HeaderSection() {
         <p className="text-muted-foreground text-lg leading-relaxed">
           I love to learn and share knowledge with the community.
           <br />
-          Building modern web apps, exploring blockchain, and Learning new
+          Building modern web apps, React Native, and Learning new
           things.
         </p>
       </div>
